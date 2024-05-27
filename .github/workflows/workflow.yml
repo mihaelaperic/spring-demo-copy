@@ -59,11 +59,11 @@ jobs:
       - name: docker build
         id: docker-build
         run: |
-          docker build -t fra.ocir.io/frazjikiagro/novirepo/mojrepo .
+          docker build -t fra.ocir.io/frazjikiagro/mihaelaperic/spring-demo-copy .
       - name: docker push
         id: docker-push
         run: |
-          docker push fra.ocir.io/frazjikiagro/novirepo/mojrepo:latest
+          docker push fra.ocir.io/frazjikiagro/mihaelaperic/spring-demo-copy:latest
   deploy-job:
     needs: build-job
     runs-on: ubuntu-latest
