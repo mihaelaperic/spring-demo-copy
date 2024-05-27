@@ -63,7 +63,7 @@ jobs:
       - name: docker push
         id: docker-push
         run: |
-          docker push fra.ocir.io/frazjikiagro/mihaelaperic/spring-demo-copy:latest
+          docker push fra.ocir.io/frazjikiagro/mihaelaperic/spring-demo-copy
   deploy-job:
     needs: build-job
     runs-on: ubuntu-latest
